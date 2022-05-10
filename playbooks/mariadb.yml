@@ -2,7 +2,9 @@
   - name: "Playing with Ansible and Git"
     hosts: localhost
     connection: local 
-  
+    become: yes
+    become_user: root
+    become_method: sudo
     tasks:
 
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
