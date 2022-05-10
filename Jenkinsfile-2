@@ -1,11 +1,6 @@
 pipeline {
   agent any
-  
-  environment {
-   ANSIBLE_PRIVATE_KEY=credentials('mariadb-private-key') 
-  }
-
-  stages {
+   stages {
     stage('Hello') {
       steps {
         sh 'ansible-galaxy collection install -r requirements.yml'
