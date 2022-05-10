@@ -1,8 +1,17 @@
----
--name: This is a hello-world example
- hosts: localhost
- tasks:
-    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-      copy:
-        content: hello worldn
-        dest: /tmp/testfile.txt
+--
+- name: SPM Deployment 
+# Host machine where we are performing operations, use localhost for local machine or ip address
+# It connects to other machine through SSH by default
+  hosts: localhost
+# Describing the kind of user access we want, root by default if become set to true /home/gigatorb/spm-kubernetes-21.10.0
+  become: true
+  become_user: gigatorb
+  vars:
+    ansible_python_interpreter: /usr/local/bin/python3
+  tasks:
+  - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+    copy:
+      content: hello worldn
+      dest: /tmp/testfile.txt
+      
+        
