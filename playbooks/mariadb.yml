@@ -11,5 +11,8 @@
     copy:
       content: hello worldn
       dest: /home/gigatorb/OASDemo/OASZIP/testfile.txt
+  - debug: var=output.stdout_lines 
+      
+   
       
         
