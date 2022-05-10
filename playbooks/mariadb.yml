@@ -1,4 +1,4 @@
---
+---
 - name: SPM Deployment 
 # Host machine where we are performing operations, use localhost for local machine or ip address
 # It connects to other machine through SSH by default
@@ -12,6 +12,6 @@
   - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
     copy:
       content: hello worldn
-      dest: /tmp/testfile.txt
+      dest: /home/gigatorb/OASDemo/OASZIP/testfile.txt
       
         
