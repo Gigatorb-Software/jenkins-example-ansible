@@ -6,6 +6,10 @@
 # Describing the kind of user access we want, root by default if become set to true /home/gigatorb/spm-kubernetes-21.10.0
   remote_user: root
   become: true
- 
+  tasks:
+  - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+    copy:
+      content: hello worldn
+      dest: /home/gigatorb/OASDemo/OASZIP/testfile.txt
       
         
