@@ -3,6 +3,7 @@
 # Host machine where we are performing operations, use localhost for local machine or ip address
 # It connects to other machine through SSH by default
   hosts: localhost
+  become: true
 # Describing the kind of user access we want, root by default if become set to true /home/gigatorb/spm-kubernetes-21.10.0
   tasks:
   - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
