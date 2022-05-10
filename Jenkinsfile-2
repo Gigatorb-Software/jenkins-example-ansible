@@ -5,7 +5,7 @@ pipeline {
     stage('Hello') {
       steps {
         sh 'ansible-galaxy collection install -r requirements.yml'
-        sh 'ansible-playbook -i inventory/mariadb.hosts playbooks/mariadb.yml -e "ansible_become_password=Gigatorb2022"'
+        sh 'ansible-playbook playbooks/mariadb.yml -i inventory.ini --ask-become-pass'
       }
     }
   }
