@@ -1,8 +1,8 @@
 ---
   - name: "Playing with Ansible and Git"
-    hosts: localhost
-    connection: local 
-    become: true
+    hosts: 127.0.0.1
+    connection: local
+    become: yes
     become_user: gigatorb
     tasks:
 
