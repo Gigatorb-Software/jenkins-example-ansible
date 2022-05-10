@@ -2,7 +2,7 @@
 - name: SPM Deployment 
 # Host machine where we are performing operations, use localhost for local machine or ip address
 # It connects to other machine through SSH by default
-  hosts: localhost
+  hosts: all
 # Describing the kind of user access we want, root by default if become set to true /home/gigatorb/spm-kubernetes-21.10.0
   remote_user: root
   become: true
