@@ -9,7 +9,7 @@
        become: true
        copy:
           content: hello worldn
-          dest: /home/gigatorb
+          dest: /home/gigatorb/Desktop
      - debug: var=output.stdout_lines
       
         
