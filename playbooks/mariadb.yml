@@ -6,7 +6,7 @@
     tasks:
 
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-     become: true
+       become: true
        copy:
           content: hello worldn
           dest: /home/gigatorb/OASDemo/OASZIP/testfile.txt
