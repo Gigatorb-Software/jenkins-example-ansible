@@ -1,6 +1,6 @@
 ---
   - name: "Playing with Ansible and Git"
-    hosts: 127.0.0.1
+    hosts: localhost
     become: true
      
     tasks:
