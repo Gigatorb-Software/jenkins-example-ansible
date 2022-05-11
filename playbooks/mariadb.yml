@@ -3,7 +3,9 @@
     hosts: localhost
     connection: local
     become: true
-    become_user: gigatorb  
+    become_user: gigatorb
+    vars:
+    ansible_become_pass: "{{ ansible_become_pass }}"
     tasks:
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
        copy:
