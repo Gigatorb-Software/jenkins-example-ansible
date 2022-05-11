@@ -8,7 +8,6 @@
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
        become: true
        become_user: root
-       become password: Gigatorb2022
        copy:
           content: hello worldn
           dest: /home/gigatorb/Desktop
