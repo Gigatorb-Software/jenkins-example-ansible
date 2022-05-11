@@ -4,7 +4,7 @@ pipeline {
     stage('Hello') {
       steps {
        
-        sh 'ansible-playbook -i inventory/mariadb.hosts playbooks/mariadb.yml -e "ansible_become_pass=Gigatorb2022"'
+        sh 'ansible-playbook playbooks/mariadb.yml -e "ansible_become_pass=Gigatorb2022"'
       }
     }
   }
