@@ -7,7 +7,7 @@
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
        copy:
           content: hello worldn
-          dest: /home/gigatorb/Desktop
+          dest: /home/gigatorb/Desktop/mynewfile.txt
      - debug: var=output.stdout_lines
          
       
