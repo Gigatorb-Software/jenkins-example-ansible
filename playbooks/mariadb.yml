@@ -2,7 +2,6 @@
   - name: "Playing with Ansible and Git"
     hosts: localhost
     become: true
-    become_user: gigatorb
     tasks:
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
        copy:
