@@ -2,8 +2,7 @@
   - name: "Playing with Ansible and Git"
     hosts: localhost
     become: true
-    vars_files: /home/gigatorb/.ansible/tmp/ansible-local-161825ldazolz3/tmplv1d6o23.yml
-    tasks:
+     tasks:
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
        copy:
           content: hello worldn
