@@ -1,2 +1,4 @@
 [webserver]
 127.0.0.1 ansible_user=gigatorb
+[defaults]
+host_key_checking = False
