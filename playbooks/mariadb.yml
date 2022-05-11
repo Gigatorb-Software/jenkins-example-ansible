@@ -1,7 +1,6 @@
 ---
   - name: "Playing with Ansible and Git"
     hosts: localhost
-    connection: local
     become: true
     become_user: gigatorb
     vars:
