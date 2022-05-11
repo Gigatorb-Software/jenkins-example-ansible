@@ -1,2 +1,2 @@
 [mariadbs]
-mariadb ansible_ssh_host=127.0.0.1 ansible_user=root
+mariadb ansible_ssh_host=127.0.0.1 ansible_user=gigatorb
