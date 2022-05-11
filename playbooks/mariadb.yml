@@ -7,7 +7,7 @@
 
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
        become: true
-       become_user: root
+       become_user: gigatorb
        copy:
           content: hello worldn
           dest: /home/gigatorb/Desktop
