@@ -5,12 +5,10 @@
     vars_prompt:
     - name: "ansible_become_pass"
       prompt: "what is your password?"
-      
+    become: true
+    become_user: gigatorb  
     tasks:
-
      - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-       become: true
-       become_user: gigatorb
        copy:
           content: hello worldn
           dest: /home/gigatorb/Desktop
