@@ -4,7 +4,7 @@
     become: true
      
     tasks:
-     - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+     - name: Create a file called '/tmp/testfile.txt' with the content 'hello ravi'.
        copy:
           content: hello worldn
           dest: /home/gigatorb/Desktop/mynewfile.txt
